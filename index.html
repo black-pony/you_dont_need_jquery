@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a1 = document.getElementById('test');
+        var a2 = document.getElementsByClassName('test');
+        var a3 = document.getElementsByTagName('test');
+        var a4 = document.querySelectorAll('#test div');
+        var a5 = document.querySelectorAll('.test span');
+        var a6 = document.querySelector('#test span');
+        var myHtml = document.documentElement;
+        var myHead = document.head;
+        var myBody = document.body;
+        if(document.getElementById('test')!=null){
+
+        }
+
+        if(document.querySelectorAll('div').length > 0){
+
+        }
+
+
+        function forEach(elems,callback){
+            if([].forEach){
+                [].forEach.call(elems,callback);
+            }else{
+                    callback(elems[i],i);
+                }
+            
+        }
+
+        var div = document.querySelector('div');
+        forEach(div,function(elems,i){
+
+        })
+
+        document.getElementById('test').innerHTML = '';
+        document.querySelector('div') === document.getElementById('test');
+
+        var t = document.querySelector('div');
+        t.textContext || t.innerText;
+
+        document.getElementById('test').outerHTML;
+        document.getElementById('test').outerHTML = '<span></span>';
+
+        document.querySelector('input').value = 'abc';
+
+        function addClass(elem,className){
+            if(elem.classList){
+                elem.classList.add(className);
+            }else{
+                elem.className += '' + className;
+            }
+        }
+
+        addClass(document.getElementById('test'),'a');
+
+        function removeClass(elem,className){
+            if(elem.classList){
+                elem.classList.remove(className);
+            }else{
+                elem.className = elem.className.replace(new RegExp('|\\b' + className.split(' ').join('|') + '(\\b|$)','gi'),'');
+
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
